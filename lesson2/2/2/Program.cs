@@ -16,7 +16,8 @@ namespace _2
             int numberOfMounth;
             while ((!int.TryParse(Console.ReadLine(), out numberOfMounth))||numberOfMounth>12||numberOfMounth<1)
                 Console.WriteLine("Некорректные данные число между 1 и 12.");
-            Console.WriteLine(mounth[numberOfMounth - 1]);
+            //Console.WriteLine(mounth[numberOfMounth - 1]);
+            Console.WriteLine(DateTime.Today.Month(2));
         }
     }
 }
