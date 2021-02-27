@@ -9,7 +9,7 @@ namespace _4
     class Program
     {
         static char[,] battleField = new char[12, 12];
-        static int[] ships = { 4, 3, 3, 2, 2, 1, 1, 1, 1 };
+        static int[] ships = { 4,3,3,2,2,1,1,1,1  };
         static bool EnviromentCheck(int xCord, int yCord, int i, int j)
         {
             if (battleField[yCord + i - 1, xCord + j - 1] == 'X' || battleField[yCord + i - 1, xCord + j] == 'X' || battleField[yCord + i - 1, xCord + j + 1] == 'X' ||
@@ -23,7 +23,7 @@ namespace _4
         {
             if (vector == 1)
             {
-                if (xCord + shipSize < battleField.GetLength(1) - 1)
+                if (xCord + shipSize < battleField.GetLength(1) )
                     for (int i = 0; i < shipSize; i++)
                     {
                         if (!EnviromentCheck(xCord, yCord, 0, i))
@@ -34,7 +34,7 @@ namespace _4
             else
                 if (vector == 2)
             {
-                if (xCord - shipSize > 0)
+                if (xCord - shipSize > -1)
                 {
                     for (int i = 0; i > -shipSize; i--)
                         if (!EnviromentCheck(xCord, yCord, 0, i))
@@ -45,7 +45,7 @@ namespace _4
             else
                 if (vector == 3)
             {
-                if (yCord + shipSize < battleField.GetLength(0) - 1)
+                if (yCord + shipSize < battleField.GetLength(0) )
                 {
                     for (int i = 0; i < shipSize; i++)
                         if (!EnviromentCheck(xCord, yCord, i, 0))
@@ -56,7 +56,7 @@ namespace _4
             else
                 if (vector == 4)
             {
-                if (xCord - shipSize > 0)
+                if (xCord - shipSize > -1)
                 {
                     for (int i = 0; i > -shipSize; i--)
                         if (!EnviromentCheck(xCord, yCord, i, 0))
@@ -76,13 +76,13 @@ namespace _4
             int xCord, yCord, vector;
             for (int i = 0; i < ships.Length; i++)
             {
-                xCord = bfGen.Next(1, 10);
-                yCord = bfGen.Next(1, 10);
+                xCord = bfGen.Next(1, 11);
+                yCord = bfGen.Next(1, 11);
                 vector = bfGen.Next(1, 4);
                 while (!placeCheck(xCord, yCord, ships[i], vector))
                 {
-                    xCord = bfGen.Next(1, 10);
-                    yCord = bfGen.Next(1, 10);
+                    xCord = bfGen.Next(1, 11);
+                    yCord = bfGen.Next(1, 11);
                     vector = bfGen.Next(1, 4);
                 }
                 for (int j = 0; j < ships[i]; j++)
