@@ -1,0 +1,14 @@
+D:\шарп 1\hell world\hell world\bin\Debug\hell world.exe.config
+D:\шарп 1\hell world\hell world\bin\Debug\hell world.exe
+D:\шарп 1\hell world\hell world\bin\Debug\hell world.pdb
+D:\шарп 1\hell world\hell world\obj\Debug\hell world.csprojAssemblyReference.cache
+D:\шарп 1\hell world\hell world\obj\Debug\hell world.csproj.CoreCompileInputs.cache
+D:\шарп 1\hell world\hell world\obj\Debug\hell world.exe
+D:\шарп 1\hell world\hell world\obj\Debug\hell world.pdb
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\bin\Debug\hell world.exe.config
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\bin\Debug\hell world.exe
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\bin\Debug\hell world.pdb
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\obj\Debug\hell world.csprojAssemblyReference.cache
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\obj\Debug\hell world.csproj.CoreCompileInputs.cache
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\obj\Debug\hell world.exe
+D:\шарп 1\geekbrains\lesson1\hell world\hell world\obj\Debug\hell world.pdb
